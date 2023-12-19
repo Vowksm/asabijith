@@ -1,0 +1,640 @@
+body{
+  background-color: #000000 ;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  padding: 0px 0px 20px 0px;
+  font-family: 'Poppins', sans-serif;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  width: 2px; /* Set the width of the scrollbar */
+  height: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0066ff; /* Set the color of the scrollbar thumb */
+  border-radius: 3px; /* Set the border radius of the scrollbar thumb */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #ffffff00; /* Set the color of the scrollbar track */
+}
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+
+div.intro h1 {
+    font-family: Rocher, sans-serif;
+    font-palette: --Mint;
+    padding: 55px;
+    font-size: 4rem;
+    -webkit-animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  div.intro{
+    background: url('https://dl.dropbox.com/s/4gk8uz6p04vcd55/pexels-cottonbro-studio-4488636.jpg?dl=0');
+    height: 500px;
+     
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin-top: -2.7rem;
+  }
+ div.intro p{
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  background: #FFFFFF;
+background: linear-gradient(to right, #FFFFFF 50%, #BEC1CF 65%);
+display: inline-block;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  margin-top: -3.9rem;
+ }
+
+div.intro h2 img{
+  vertical-align: middle;
+  width: 35px;
+}
+div.intro h2 {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  margin-top: -0.2rem;
+  background: linear-gradient(to right, #5006CF 32%, #6CB8CF 68%);
+  display: inline-block; /* Fix for Firefox */
+  border-radius: 4px;
+  margin-left: 2rem;
+  color: ghostwhite;
+  -webkit-animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes scale-in-left {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-left {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+ @-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+div.more{
+  background: rgb(179,55,207);
+background: linear-gradient(71deg, rgba(179,55,207,0.9920343137254902) 25%, rgba(124,0,255,1) 61%);
+margin-top: -2rem;
+height: 500px;
+}
+div.more h1{
+  padding: 110px 20px 20px 60px; 
+  margin-left: 1rem;
+  font-size: 2.6rem;
+  color: #fdfff5;
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  font-family: 'Poppins', sans-serif;
+
+}
+div.more p{
+  float: left;
+  margin-left: 50px;
+  font-family: 'Hachi Maru Pop', cursive;
+  width: 50%;
+  color: #e3f988;
+}
+div.more img{
+  width: 285px;
+  float: right;
+margin-right: 122px;
+margin-top: -3rem;
+}
+.container {
+  text-align: center;
+  background-color: #e4ffe4;
+  height: 480px;
+  padding: 20px;
+}
+#copy-joke-btn{
+  padding: 10px;
+  margin-left: 1px;
+  border-radius: 7px;
+  border: none;
+  background-color: #d0d2ff;
+  font-family: 'Poppins', sans-serif;
+  color: #0066ff;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.joke-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+#generate-joke-btn {
+  background-color: #d9004c;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 2s;
+}
+#joke-text{
+  color: #b19cd9;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+#generate-joke-btn:hover {
+  background-color: #4c2882;
+}
+div.container h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  
+  color: #110108;
+   background-image: -webkit-linear-gradient(0deg, #110108 19%, #3f0ad1 57%);
+    background-clip: text;
+     -webkit-background-clip: text; 
+     text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+            
+}
+
+.trending-photos-container {
+  text-align: center;
+  max-width: 90%; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container */
+  margin-top: 2rem;
+}
+div.trending-photos-container h1{
+  font-family: 'Poppins', sans-serif;
+  color:  Blue;
+}
+#photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-card {
+  margin: 5px;
+}
+
+.photo-image {
+  max-width: 99%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-container h1{
+  font-family: 'Poppins', sans-serif;
+  color: ghostwhite;
+}
+.newnwes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000000;
+  overflow-y: auto;
+}
+
+#articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.newnwes::-webkit-scrollbar {
+  width: 7px; /* Set the width of the scrollbar */
+  height: 4px;
+}
+
+.newnwes::-webkit-scrollbar-thumb {
+  background-color: #0066ff; /* Set the color of the scrollbar thumb */
+  border-radius: 3px; /* Set the border radius of the scrollbar thumb */
+}
+
+.newnwes::-webkit-scrollbar-track {
+  background-color: #ff2e2e00; /* Set the color of the scrollbar track */
+}
+
+.new-songs-container::-webkit-scrollbar {
+  width: 7px; /* Set the width of the scrollbar */
+  height: 4px;
+}
+
+.new-songs-container::-webkit-scrollbar-thumb {
+  background-color: #0066ff; /* Set the color of the scrollbar thumb */
+  border-radius: 3px; /* Set the border radius of the scrollbar thumb */
+}
+
+.new-songs-container::-webkit-scrollbar-track {
+  background-color: #ff2e2e00; /* Set the color of the scrollbar track */
+}
+
+#results::-webkit-scrollbar {
+  width: 7px; /* Set the width of the scrollbar */
+  height: 4px;
+}
+
+#results::-webkit-scrollbar-thumb {
+  background-color: #0066ff; /* Set the color of the scrollbar thumb */
+  border-radius: 3px; /* Set the border radius of the scrollbar thumb */
+}
+
+#results::-webkit-scrollbar-track {
+  background-color: #ff2e2e00; /* Set the color of the scrollbar track */
+}
+
+.article {
+  width: 300px;
+  border-radius: 7px;
+  padding: 15px;
+  background-color: #c3b2f4;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+
+.article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.article h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #001440;
+  font-family: 'Poppins', sans-serif;
+}
+
+.article p {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.article a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+h1.newsrsd{
+  font-size: 3rem;
+  margin-left: 50px;
+  color:#9898ff ;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.new-songs-container {
+ 
+  margin: 0 auto; /* Center the container */
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+#songs-container {
+  display: flex;
+}
+
+.song-card {
+  display: inline-block;
+  margin: 10px;
+background: rgba(255, 255, 255, 0.03);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.2px);
+-webkit-backdrop-filter: blur(4.2px);
+border: 1px solid rgba(255, 255, 255, 0.19);
+  width: 100%;
+  border-radius: 7px;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #0066ff;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.song-info {
+  font-size: 2rem;
+  margin-top: 5px;
+  color: ghostwhite;
+  font-family: 'Poppins', sans-serif;
+}
+ h1.newsong{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  padding: 10px;
+  color: #7f94c5;
+  margin-left: 4rem;
+}
+.article a {
+  color: #0066ff; /* Set the text color for the "Read More" link */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Set font weight */
+  font-family: 'Poppins', sans-serif;
+ display: flex;
+ margin-left: 22px;
+ margin-top: 1rem;
+ padding: 10px;
+ background-color: rgb(179, 179, 217);
+ width: 90px;
+ border-radius: 7px;
+}
+.search-container {
+  text-align: center;
+}
+
+.title {
+  color:  #C9E3FF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+}
+
+.input-field {
+  padding: 8px;
+  margin: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #4545E6;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.search-button:hover {
+  background-color: #2020ca;
+  border-radius: 7px;
+}
+#results {
+  margin-top: 20px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between;
+  padding: 20px; /* Increase the padding for better spacing */
+  max-width: 100%; /* Set a maximum width */
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  overflow-y: auto;
+}
+
+.album {
+  flex: 0 0 auto; /* Prevent flex items from growing */
+  text-align: center; /* Center content within each album */
+}
+
+
+.input-field {
+  padding: 10px;
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #E84181;
+}
+
+/* Optional: Add styles for focus state */
+.input-field:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+
+
+
+
+div.album p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: ghostwhite;
+}
+div.album img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed */
+  border-radius: 7px; /* Add border-radius for rounded corners */
+  margin-bottom: 10px; /* Add margin between images */
+ margin-right: 20px;
+ border: 1px solid #0066ff;
+}
+
+  @media screen and (max-width: 999px) {
+    .title{
+      font-size: 2rem;
+    }
+
+    #results{
+      overflow-x: auto;
+      display: flex;
+      flex-wrap: nowrap; /* Allow items to wrap to the next line */
+      height: auto;
+    }
+
+
+    .newnwes {
+      max-width: 3000px; /* Set a maximum width for the horizontal-scrolling container */
+      max-height: auto;
+      display: flex;
+      overflow-x: auto;
+    }
+    
+    #articles {
+      display: flex;
+      flex-wrap: nowrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-direction: row;
+      justify-content: space-between;
+      flex: 0 0 auto;
+    
+    }
+    
+    .article {
+      width: 310px;
+      padding: 17px;
+      height: auto;
+      border: 1px solid rgba(248, 248, 255, 0.296);
+      border-radius: 7px;
+      background-color: #c3b2f400 ;
+      box-sizing: border-box;
+
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    
+    .article img {
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      border-radius: 7px;
+      display: block;
+    }
+    
+    
+    
+    .article h2 {
+      font-size: 1.4rem; /* Increase font size as needed */
+      margin-bottom: 12px; /* Increase margin as needed */
+     width: 260px;
+    color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      padding: 10px;
+    }
+    
+    .article p {
+      font-size: 16px; /* Increase font size as needed */
+      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      color: #abc3f7;
+    }
+    
+    
+    
+    
+
+
+
+    div.intro h1{
+  padding:  50px 30px 30px 30px;
+  font-size: 3rem;
+}
+div.container h1{
+  font-size: 2rem;
+}
+div.intro p{
+  font-size: 0.9rem;
+  margin-top: -1rem;
+}
+#joke-text{
+  font-size: 1rem;
+}
+div.intro h2{
+  margin-top: 0.8rem;
+}
+div.more h1{
+  padding: 10px;
+  font-size: 3rem;
+}
+div.more p{
+  font-size: 15px;
+  margin-top: -2rem;
+  width: 90%;
+  padding: 20px;
+  margin-left: 0px;
+}
+div.more{
+  height: 800px;
+}
+div.more img{
+  width: 117px;
+  margin-top: 1rem;
+  margin-right: 55px;
+}
+h1.newsong{
+  margin-left: 10px;
+  font-size: 3rem;
+}
+.song-card {
+  font-size:1.5rem;
+}
+.song-info {
+  font-size: 1rem;
+}
+  }
+ 
+ 
+ 
